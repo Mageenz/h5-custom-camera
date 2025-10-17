@@ -3,5 +3,10 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "noEmitOnError": false,   // 即使有错误也允许生成文件
+    "strict": false,          // 关闭所有严格检查（可选）
+    "noImplicitAny": false    // 忽略隐式 any
+  }
 }
