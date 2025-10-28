@@ -10,6 +10,7 @@ import {
 } from "@ant-design/icons";
 import "./styles/global.css";
 import "./styles/home.scss";
+import { Link } from "react-router-dom";
 
 const App: React.FC<{}> = () => {
   // 模拟历史校验数据
@@ -332,16 +333,17 @@ const App: React.FC<{}> = () => {
 
       {/* Fixed Bottom Button - 开始校验按钮 */}
       <div className="fixed-button-wrapper">
-        <Button 
-          color="primary"
-          size="large"
-          block
-          className="start-button"
-          onClick={handleStartVerification}
-        >
-          <SafetyCertificateOutlined style={{ fontSize: '0.4rem', marginRight: '0.16rem' }} />
-          开始校验签名
-        </Button>
+        <Link to="/camera">
+          <Button 
+            color="primary"
+            size="large"
+            block
+            className="start-button"
+          >
+            <SafetyCertificateOutlined style={{ fontSize: '0.4rem', marginRight: '0.16rem' }} />
+            开始校验签名
+          </Button>
+        </Link>
       </div>
     </div>
   );
