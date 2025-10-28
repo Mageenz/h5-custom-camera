@@ -484,6 +484,19 @@
   color: #dc2626;
 }
 
+/**
+  盒子px转rem
+ */
+ @function remB($px) {
+  @return calc($px/75) * 1rem;
+}
+/**
+  字号px转rem
+ */
+@function remF($px) {
+  @return calc($px/64) * 0.853333333rem;
+}
+
 /* Fixed Button */
 .fixed-button-wrapper {
   position: fixed;
@@ -493,6 +506,12 @@
   padding: 0.48rem;
   background: linear-gradient(to top, #fff, #fff, transparent);
   pointer-events: none;
+  /* 默认给安卓等设备留出一点空间 */
+  padding-bottom: 16px;
+
+  /* 对 iPhone X 及以上设备自动适配安全区 */
+  padding-bottom: calc(env(safe-area-inset-bottom) + 16px);
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 16px);
 }
 
 .start-button {
