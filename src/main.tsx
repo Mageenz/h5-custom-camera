@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import Camera from './Camera.tsx'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "lib-flexible";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,5 +13,5 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/camera" element={<Camera />} />
       </Routes>
     </Router>
-  </StrictMode>,
+  </StrictMode>
 )

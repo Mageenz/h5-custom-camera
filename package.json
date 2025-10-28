@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "antd": "^4.15.4",
-    "antd-mobile": "^2.3.4",
+    "antd-mobile": "^5.41.1",
     "lib-flexible": "^0.3.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

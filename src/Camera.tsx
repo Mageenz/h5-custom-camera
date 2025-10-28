@@ -1,9 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-
-import 'lib-flexible';
-
-import 'antd-mobile/dist/antd-mobile.css'; // or 'antd-mobile/dist/antd-mobile.less'
-import 'antd/dist/antd.css';
 import { showLoading, hideLoading, showFail, showSuccess } from './utils/toast';
 import styles from './index.module.scss';
 import { CameraOutlined, PictureOutlined } from '@ant-design/icons';
